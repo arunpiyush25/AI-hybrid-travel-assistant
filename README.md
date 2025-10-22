@@ -1,4 +1,5 @@
 # Improvements/changes in Blue Enigma Project’s existing codebase.
+###[Refer to architecture diagram for high level understanding of the project.]
 
 ## pinecone_upload.py (Refer to screenshots for live demo- Batch_&_index(Pinecone), Pinecone_upload)
 
