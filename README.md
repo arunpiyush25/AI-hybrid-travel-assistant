@@ -1,7 +1,7 @@
 # Improvements/changes in Blue Enigma Project’s existing codebase.
 ### (Refer to architecture diagram for high level understanding of the project.)
 
-## pinecone_upload.py (Refer to screenshots for live demo- Batch_&_index(Pinecone), Pinecone_upload)
+## 1) pinecone_upload.py (Refer to screenshots for live demo- Batch_&_index(Pinecone), Pinecone_upload)
 
 ### Migrated from OpenAI to Hugging Face for Embeddings
 - **What:** Replaced OpenAI’s text-embedding-3-small with Hugging Face model `google/embeddinggemma-300m`.
@@ -32,7 +32,7 @@
 - **Why:** To make the upload process traceable and user-friendly.
 ---
 
-## load_to_neo4j.py (Refer to screenshot for live demo- Neo4j_graph)
+## 2) load_to_neo4j.py (Refer to screenshot for live demo- Neo4j_graph)
 
 ### Consistency with Updated Schema
 - **What:** Confirmed every node has both specific type label (e.g., City, Attraction) and generic `Entity` label.
@@ -52,7 +52,7 @@
 
 ---
 
-## hybrid_chat.py (Refer to screenshot for live demo- coherent_resp)
+## 3) hybrid_chat.py (Refer to screenshot for live demo- coherent_resp)
 
 ### Updated Embeddings & LLM API
 - **What:** Replaced OpenAI embedding and chat calls with Hugging Face Inference API (`google/embeddinggemma-300m` for embeddings, `meta-llama/Llama-3.1-8b-instruct` for LLM).
@@ -95,7 +95,7 @@
 - **Why:** To make responses more readable, structured, and user-friendly.
 
 
-## Advanced Feature added for improved user experience – Conversation Memory (LangChain) || (Refer to screenshots for live demo- LangChain_resp01, LangChain_resp02)
+## 4) Advanced Feature added for improved user experience – Conversation Memory (LangChain) || (Refer to screenshots for live demo- LangChain_resp01, LangChain_resp02)
 
 ### Context-Aware Multi-Turn Chat 
 - Added **LangChain’s `ConversationBufferMemory`** to store and recall session history, allowing the assistant to reference previous queries and responses for more coherent answers.
